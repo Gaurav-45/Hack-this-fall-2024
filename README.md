@@ -62,7 +62,29 @@ GitHub was essential to our project’s success, enabling seamless teamwork and 
 Video Demo: https://youtu.be/lcoxquvxrmQ
 
 📷 Project Screenshots
-Screenshot 1 Screenshot 2 Screenshot 3
+<table>
+   <tr>
+      <th>Automated Alerts</th>
+      <th>Plant Disease Detection</th>
+      <th>Crop Yeild Predictor</th>
+   </tr>
+   <tr>
+      <td><img src="https://github.com/user-attachments/assets/a31fe477-b3f8-41f5-ac51-db1076cabf5f"/></td>
+      <td><img src="https://github.com/user-attachments/assets/93ad7d88-228d-4505-901c-97d0353c524e"/></td>
+      <td><img src="https://github.com/user-attachments/assets/47d57910-b13b-4fa8-aa26-300b772ac163"/></td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <th>Local Market Price Predictor</th>
+      <th>Chatbot</th>
+   </tr>
+   <tr>
+      <td><img src="https://github.com/user-attachments/assets/dc917eab-3dc5-4516-8b84-cf75e83afcaf"/></td>
+      <td><img src="https://github.com/user-attachments/assets/7dc43de0-5a22-4399-ae89-f22221d2b51b"/></td>
+   </tr>
+</table>
+
 
 ### 🎉 Join Us in Building a Sustainable Future!
 
