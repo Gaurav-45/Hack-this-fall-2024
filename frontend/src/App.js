@@ -5,6 +5,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import AlertDismissable from "./components/AlertDismissable";
 import Routes from "./Routes";
 import "./App.css";
+import TopNavbar from "./components/TopNavbar/TopNavbar";
 
 class App extends Component {
   constructor(props) {
@@ -28,41 +29,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Container>
-          <Navbar
-            collapseOnSelect
-            className="app-nav-bar"
-            variant="dark"
-            expand="lg"
-          >
-            <Navbar.Brand href="/">DisDetector</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="sub-Navbar">
-                <Link className="nav-link" to="/">
-                  Classify
-                </Link>
-                <Link className="nav-link" to="/database">
-                  Our Database
-                </Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-          {this.props.updateAvailable && this.state.showUpdateAlert && (
-            <div style={{ paddingTop: "10px" }}>
-              <AlertDismissable
-                title=""
-                variant="info"
-                message={this.state.reloadMsg}
-                show={this.props.updateAvailable && this.state.showUpdateAlert}
-                onClose={this.dismissUpdateAlert}
-              />
-            </div>
-          )}
-        </Container>
-        <Container>
-          <Routes />
-        </Container>
+        <TopNavbar />
+        {this.props.updateAvailable && this.state.showUpdateAlert && (
+          <div style={{ paddingTop: "10px" }}>
+            <AlertDismissable
+              title=""
+              variant="info"
+              message={this.state.reloadMsg}
+              show={this.props.updateAvailable && this.state.showUpdateAlert}
+              onClose={this.dismissUpdateAlert}
+            />
+          </div>
+        )}
+        <Routes />
       </div>
     );
   }
