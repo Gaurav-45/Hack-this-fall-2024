@@ -1,3 +1,7 @@
+## 🌱 A Digital बंधू for Our Farmers
+
+<i>Bridging educational, geographical, and language barriers to support India's smallholder farmers.</i>
+
 <p align="center"><img src="https://github.com/user-attachments/assets/5a5801e3-7027-401b-8f7a-90f0609c04bf" height="300" width="600"></p>
 
 # Hack This Fall - 2024
@@ -5,13 +9,9 @@
 - Team Name: Code Stars
 - Project Title: कृषिबंधू (Krishi-Bandhu)
 
-## 🌱 A Digital बंधू for Our Farmers
-
-<i>Bridging educational, geographical, and language barriers to support India's smallholder farmers.</i>
-
 #### 🚜 Problem Statement
 
-Agriculture forms the backbone of the Indian economy, with over half of the population dependent on it. Smallholder farmers, those with less than 5 acres of land, contribute to 2/3rds of the world’s food production and make up 86% of all Indian farmers. Yet, these farmers often face challenges in:
+Agriculture forms the backbone of the Indian economy, with over half of the population dependent on it. Smallholder farmers, those with less than 5 acres of land, contribute to 2/3rds of the world’s food production and makeup 86% of all Indian farmers. Yet, these farmers often face challenges in:
 
 Adopting sustainable practices due to limited access to real-time data.
 Managing resources effectively with minimal guidance on technological and scientific advancements.
@@ -34,7 +34,7 @@ Through these features, कृषिबंधू enables data-driven decision-ma
 
 - Frontend: JavaScript, Bootstrap, React.js, TensorFlow.js
 - Backend: Python, Flask, Gemini API
-- Database: MongoDB
+- Database: MongoDB, Chroma
 - Messaging: Twilio for Calls and SMS alerts
 
 ### 🚧 Challenges We Faced
