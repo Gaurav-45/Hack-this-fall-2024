@@ -7,6 +7,7 @@ import Routes from "./Routes";
 import "./App.css";
 import TopNavbar from "./components/TopNavbar/TopNavbar";
 import BottomNavBar from "./components/BottomNavBar/BottomNavBar ";
+import ChatbotIcon from "./components/ChatbotIcon";
 
 class App extends Component {
   constructor(props) {
@@ -30,7 +31,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <TopNavbar />
         {this.props.updateAvailable && this.state.showUpdateAlert && (
           <div style={{ paddingTop: "10px" }}>
@@ -45,7 +45,10 @@ class App extends Component {
         )}
         {/* </Container> */}
         {/* <Container> */}
-        <Routes />
+        <div style={{ paddingBottom: 200 }}>
+          <Routes />
+        </div>
+        {/* <ChatbotIcon /> */}
         {/* </Container> */}
         <BottomNavBar />
       </div>
