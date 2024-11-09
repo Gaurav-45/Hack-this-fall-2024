@@ -1,0 +1,13 @@
+.custom-modal {
+    margin-top: 100px;
+}
+
+.label {
+    font-size: large;
+    color: green;
+    font-weight: bold;
+}
+
+.medicine-dose {
+    color: darkblue;
+}
