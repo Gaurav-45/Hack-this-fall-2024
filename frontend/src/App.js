@@ -6,6 +6,7 @@ import AlertDismissable from "./components/AlertDismissable";
 import Routes from "./Routes";
 import "./App.css";
 import TopNavbar from "./components/TopNavbar/TopNavbar";
+import BottomNavBar from "./components/BottomNavBar/BottomNavBar ";
 
 class App extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <TopNavbar />
         {this.props.updateAvailable && this.state.showUpdateAlert && (
           <div style={{ paddingTop: "10px" }}>
@@ -41,7 +43,11 @@ class App extends Component {
             />
           </div>
         )}
+        {/* </Container> */}
+        {/* <Container> */}
         <Routes />
+        {/* </Container> */}
+        <BottomNavBar />
       </div>
     );
   }
