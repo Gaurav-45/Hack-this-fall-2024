@@ -12,7 +12,7 @@ function YPredictor() {
   };
   return (
     <div>
-      <h3 style={{ paddingLeft: "20px", textAlign: "left" }}>
+      <h3 style={{ paddingLeft: "20px", textAlign: "left", marginTop: 20 }}>
         Crop Yield Predictor
       </h3>
       <div style={{ paddingLeft: "20px", textAlign: "left" }}>
