@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import * as serviceWorker from './serviceWorker';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+class Index extends Component {
+  state = {
+    contentCached: false,
+    updateAvailable: false,
+  };
+  componentDidMount() {
+    const config = {
+      onUpdate: this.handleUpdate,
+    };
+  serviceWorker.register(config);
+  }
+  render() {
+    return (
+      <Router>
+        <App updateAvailable={this.state.updateAvailable} />
+      </Router>
+    );
+  }
+  handleUpdate = (registration) => {
+    const waitingServiceWorker = registration.waiting;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    if (waitingServiceWorker) {
+      waitingServiceWorker.postMessage({ type: 'SKIP_WAITING' });
+    }
+    this.setState({ updateAvailable: true});
+  }
+}
+
+ReactDOM.render(<Index />, document.getElementById('root'));
