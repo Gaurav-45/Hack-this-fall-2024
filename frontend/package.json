@@ -9,9 +9,9 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^1.7.2",
     "bootstrap": "^4.3.1",
-    "chokidar": "^4.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "heroku": "^7.54.0",
     "idb": "^4.0.3",
     "react": "^17.0.1",
     "react-bootstrap": "^1.0.0-beta.8",
@@ -21,8 +21,8 @@
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "4.0.3",
-    "serve": "^11.3.2",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "deep-chat-react": "^1.4.11"
   },
   "scripts": {
     "start": "set HTTPS=true&&react-scripts start",

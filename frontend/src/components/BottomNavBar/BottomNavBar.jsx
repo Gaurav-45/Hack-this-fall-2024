@@ -7,6 +7,23 @@ const BottomNavBar = () => {
   return (
     <div className="bottom-nav">
       <NavLink
+        to="/"
+        exact
+        className="bottom-nav-link"
+        activeClassName="active"
+      >
+        <div className="bottom-nav-item">
+          <img
+            src="/home.png"
+            alt="Yield Predictor"
+            className="bottom-nav-icon"
+          />
+          <p className="bottom-nav-text">
+            Home <br /> Page
+          </p>
+        </div>
+      </NavLink>
+      <NavLink
         to="/yieldpredictor"
         className="bottom-nav-link"
         activeClassName="active"
@@ -46,6 +63,23 @@ const BottomNavBar = () => {
             className="bottom-nav-icon"
           />
           <p className="bottom-nav-text">Price Predictor</p>
+        </div>
+      </NavLink>
+      <NavLink
+        to="/chatbot"
+        className="bottom-nav-link"
+        activeClassName="active"
+      >
+        <div className="bottom-nav-item">
+          <img
+            src="/robotic.png"
+            alt="Price Predictor"
+            className="bottom-nav-icon"
+          />
+          <p className="bottom-nav-text">
+            Krishibandhu <br />
+            Chatbot
+          </p>
         </div>
       </NavLink>
     </div>
