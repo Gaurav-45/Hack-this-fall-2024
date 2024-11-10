@@ -57,12 +57,12 @@ Our project leverages GitHub's tools to the fullest, incorporating:
 
 GitHub was essential to our project’s success, enabling seamless teamwork and rapid development.
 
-### 📸 Demo & Screenshots
+### 📸 Demo
 
 - Live Link: https://plant-diesease-detector.vercel.app/
 - Video Demo: https://youtu.be/lcoxquvxrmQ
 
-📷 Project Screenshots
+### 📷 Project Screenshots
 <table>
    <tr>
       <th>Automated Alerts</th>
